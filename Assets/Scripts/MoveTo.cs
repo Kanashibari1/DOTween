@@ -1,18 +1,10 @@
-using UnityEngine;
 using DG.Tweening;
 
-public class MoveTo : MonoBehaviour
+public class MoveTo : Base
 {
-    private Vector3 _move = new(5, 0, 0);
-
-    private LoopType _loopType = LoopType.Yoyo;
-
-    private readonly int _duration = 1;
-    private readonly int _repeats = -1;
-
     private void Start()
     {
-        transform.DOMove(_move, _duration).
+        transform.DOMove(_vector3, _duration).
             SetLoops(_repeats, _loopType);
     }
 }

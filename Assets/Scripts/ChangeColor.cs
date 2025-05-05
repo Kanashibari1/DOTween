@@ -6,7 +6,6 @@ public class ChangeColor : MonoBehaviour
     [SerializeField] private Color _color;
 
     private SpriteRenderer _spriteRenderer;
-
     private readonly int _duration = 3;
 
     private void Awake()

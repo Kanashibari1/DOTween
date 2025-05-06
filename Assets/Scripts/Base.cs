@@ -3,9 +3,9 @@ using UnityEngine;
 
 public class Base : MonoBehaviour
 {
-    [SerializeField] protected int _duration = 3;
-    [SerializeField] protected Vector3 _vector3;
-    [SerializeField] protected LoopType _loopType;
+    [SerializeField] protected int Duration = 3;
+    [SerializeField] protected Vector3 Vector3;
+    [SerializeField] protected LoopType LoopType;
 
-    protected readonly int _repeats = -1;
+    protected readonly int Repeats = -1;
 }

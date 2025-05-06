@@ -5,15 +5,15 @@ using UnityEngine.UI;
 
 public class ChangeText : MonoBehaviour
 {
-    [SerializeField] private Text text;
+    [SerializeField] private Text _text;
 
     private readonly int _duration = 3;
 
     private void Start()
     {
-        Sequence mySequence = DOTween.Sequence();
-        mySequence.Append(text.DOText("Замена текста", _duration));
-        mySequence.Append(text.DOText("\nДополнение", _duration).SetRelative());
-        mySequence.Append(text.DOText("Замена текста", _duration, true, ScrambleMode.All));
+        Sequence sequence = DOTween.Sequence();
+        sequence.Append(_text.DOText("Замена текста", _duration));
+        sequence.Append(_text.DOText("\nДополнение", _duration).SetRelative());
+        sequence.Append(_text.DOText("Замена текста", _duration, true, ScrambleMode.All));
     }
 }

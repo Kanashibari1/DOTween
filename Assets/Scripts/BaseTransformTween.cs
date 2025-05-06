@@ -1,9 +1,8 @@
 using DG.Tweening;
 using UnityEngine;
 
-public class Base : MonoBehaviour
+public class BaseTransformTween : BaseTweenAnimation
 {
-    [SerializeField] protected int Duration = 3;
     [SerializeField] protected Vector3 Vector3;
     [SerializeField] protected LoopType LoopType;
 

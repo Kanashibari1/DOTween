@@ -1,6 +1,6 @@
 using DG.Tweening;
 
-public class Scale : Base
+public class Scaler : BaseTransformTween
 {
     private void Start()
     {

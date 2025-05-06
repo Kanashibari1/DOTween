@@ -1,6 +1,6 @@
 using DG.Tweening;
 
-public class Mover : Base
+public class Mover : BaseTransformTween
 {
     private void Start()
     {

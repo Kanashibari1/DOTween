@@ -2,12 +2,11 @@ using DG.Tweening;
 using UnityEngine;
 
 [RequireComponent(typeof(SpriteRenderer))]
-public class ChangeColor : MonoBehaviour
+public class ColorChanger : BaseTweenAnimation
 {
     [SerializeField] private Color _color;
 
     private SpriteRenderer _spriteRenderer;
-    private readonly int _duration = 3;
 
     private void Awake()
     {
@@ -16,6 +15,6 @@ public class ChangeColor : MonoBehaviour
 
     private void Start()
     {
-        _spriteRenderer.DOColor(_color, _duration);
+        _spriteRenderer.DOColor(_color, Duration);
     }
 }

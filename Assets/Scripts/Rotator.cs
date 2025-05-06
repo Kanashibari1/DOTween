@@ -1,6 +1,6 @@
 using DG.Tweening;
 
-public class Rotation : Base
+public class Rotator : BaseTransformTween
 {
     private void Start()
     {
